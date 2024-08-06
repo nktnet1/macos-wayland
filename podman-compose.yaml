@@ -1,0 +1,22 @@
+version: '3'
+services:
+  osx:
+    image: docker.io/sickcodes/docker-osx:${MACOS_VERSION}
+    privileged: true
+    devices:
+      - /dev/kvm
+      - /dev/snd
+    ports:
+      - 50922:10022
+    volumes:
+      - ${XDG_RUNTIME_DIR}/${WAYLAND_DISPLAY}:/tmp/${WAYLAND_DISPLAY}
+    environment:
+      RAM: 16
+      DISPLAY: ":1"
+      GDK_BACKEND: wayland
+      CLUTTER_BACKEND: wayland
+      QT_QPA_PLATFORM: wayland
+      XDG_SESSION_TYPE: wayland
+      XDG_RUNTIME_DIR: /tmp
+      WAYLAND_DISPLAY: "${WAYLAND_DISPLAY:-wayland-0}"
+
