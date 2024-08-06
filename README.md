@@ -3,6 +3,8 @@
 Running containerised MacOS on Linux (wayland) using:
 - https://github.com/sickcodes/Docker-OSX
 
+For legal reasons, please note that Apple's Terms of Service require this software to be run on Apple hardware.
+
 ## Prerequisites:
 - use linux on [wayland](https://wayland.freedesktop.org)
 - install [podman](https://podman.io) & [podman-compose](https://github.com/containers/podman-compose)
@@ -16,12 +18,12 @@ Example:
 ./start.sh sonoma
 ```
 
-Valid versions are:
-- sonoma
-- ventura
-- monterey
-- big-sur
-- catalina
+Valid [MacOS versions](https://en.wikipedia.org/wiki/MacOS_version_history#Releases) are:
+- sonoma (v14)
+- ventura (v13)
+- monterey (v12)
+- big-sur (v11)
+- catalina (v10.15)
 
 Note: you can configure the [podman-compose.yaml](podman-compose.yaml), e.g. to change the allocated RAM (default: 16).
 
