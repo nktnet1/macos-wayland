@@ -19,4 +19,3 @@ services:
       XDG_SESSION_TYPE: wayland
       XDG_RUNTIME_DIR: /tmp
       WAYLAND_DISPLAY: "${WAYLAND_DISPLAY:-wayland-0}"
-
