@@ -6,11 +6,11 @@ if [ -z "$MACOS_VERSION" ]; then
     echo "Usage:"
     echo "    $0 MACOS_VERSION"
     echo "Example:"
-    echo "    $0 sonoma"
+    echo "    $0 monterey"
     exit 1
 fi
 
-VALID_VERSIONS="sonoma ventura monterey big-sur catalina"
+VALID_VERSIONS="sonoma venturey monterey big-sur catalina"
 
 if ! echo "$VALID_VERSIONS" | grep -w -q "$MACOS_VERSION"; then
     echo "Error:"
