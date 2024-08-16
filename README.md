@@ -15,15 +15,15 @@ For legal reasons, please note that Apple's Terms of Service require this softwa
 ```
 Example:
 ```
-./start.sh sonoma
+./start.sh monterey
 ```
 
 Valid [MacOS versions](https://en.wikipedia.org/wiki/MacOS_version_history#Releases) are:
 - sonoma (v14)
 - ventura (v13)
-- monterey (v12)
-- big-sur (v11)
-- catalina (v10.15)
+- monterey (v12) (tested)
+- big-sur (v11) (tested)
+- catalina (v10.15) (tested)
 
 Note: you can configure the [podman-compose.yaml](podman-compose.yaml), e.g. to change the allocated RAM (default: 16).
 
