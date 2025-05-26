@@ -25,7 +25,7 @@ Valid [MacOS versions](https://en.wikipedia.org/wiki/MacOS_version_history#Relea
 - big-sur (v11) (tested)
 - catalina (v10.15) (tested)
 
-Note: you can configure the [podman-compose.yaml](podman-compose.yaml), e.g. to change the allocated RAM (default: 16).
+Note: you can configure the [compose.yaml](compose.yaml), e.g. to change the allocated RAM (default: 16).
 
 Video instructions after the MacOS machine is running:
 - https://www.youtube.com/watch?v=wLezYl77Ll8

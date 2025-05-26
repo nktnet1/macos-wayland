@@ -22,4 +22,4 @@ if ! echo "$VALID_VERSIONS" | grep -w -q "$MACOS_VERSION"; then
 fi
 
 chmod o+w $XDG_RUNTIME_DIR/wayland-*
-MACOS_VERSION=${MACOS_VERSION} podman-compose -f podman-compose.yaml up
+MACOS_VERSION=${MACOS_VERSION} podman-compose -f compose.yaml up
